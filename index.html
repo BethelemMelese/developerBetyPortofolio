@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
   </head>
 
   <body>
@@ -39,38 +38,152 @@
     </header>
     <main>
       <section class="home-side">
-        <section class="hero">
-          <div class="hero-content">
-            <div class="bio">
-              <h1>Welcome to My Website</h1>
-              <p>
-                I am a software developer with a passion for creating beautiful
-                and functional websites. I have been working in the industry for
-                the past 3 years and have honed my skills in <u>React</u>,
-                <u>Redux</u>, <u>C# Asp.net</u> and <u>MERN Stuck</u>.
-              </p>
-              <button class="btn animate-btn"><span>Learn More</span></button>
-            </div>
-            <img
-              src="images/personal_image.jpg"
-              alt="Hero Image"
-              class="hero-image"
-            />
+        <div class="home-side-content">
+          <div class="bio">
+            <h1>Welcome to My Website</h1>
+            <p>
+              I am a software developer with a passion for creating beautiful
+              and functional websites. I have been working in the industry for
+              the past 3 years and have honed my skills in
+              <u>Redux</u>, <u>C# Asp.net</u> and <u>MERN Stuck</u>.
+            </p>
+            <a href="#" class="btn animate-btn">See More</a>
           </div>
-        </section>
+          <img
+            src="images/personal_image.jpg"
+            alt="home-side Image"
+            class="home-side-image"
+          />
+        </div>
       </section>
       <section class="about-side">
-        <h1>The About Section</h1>
+        <div class="about-side-content">
+          <div class="about-side-image">
+            <img src="images/side_image.jpg" alt="Profile Image" />
+          </div>
+          <div class="about-side-text">
+            <h2>My Story</h2>
+            <p>
+              I'm a passionate web developer with a love for design and
+              technology. I started my journey in the industry 3 years ago, and
+              since then, I've had the opportunity to work on a variety of
+              projects, from small personal websites to large-scale software
+              development.
+            </p>
+            <p>
+              My goal is to create systems that not only look great but also
+              provide a seamless and enjoyable user experience. I'm constantly
+              learning and staying up-to-date with the latest trends and
+              technologies in the industry, so I can offer my clients the best
+              possible solutions.
+            </p>
+            <a href="#" class="btn animate-btn">Read More</a>
+          </div>
+        </div>
       </section>
-      <section class="project-side">
-        <h1>The Project Section</h1>
+      <section class="project-side" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+          <!-- <div class="project-item">
+            <img src="images/Screenshot (1).png" alt="Project 1" />
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+            <button class="view-details">View Details</button>
+          </div>
+          <div class="project-item">
+            <img src="images/Screenshot (11).png" alt="Project 2" />
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+            <button class="view-details">View Details</button>
+          </div>
+          <div class="project-item">
+            <img src="images/Screenshot (14).png" alt="Project 3" />
+            <h3>Project 3</h3>
+            <p>Description of Project 3</p>
+            <button class="view-details">View Details</button>
+          </div> -->
+        </div>
+        <div id="project-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="" />
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+          </div>
+        </div>
       </section>
-      <section class="other-side">
+      <!-- <section class="other-side">
         <h1>The Other Section</h1>
-      </section>
-      <section class="contact-side">
-        <h1>The Content Section</h1>
+      </section> -->
+      <!-- <hr /> -->
+      <section class="contact-side" id="contact">
+        <div class="contact-heading">
+          <h1 class="contact-title text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+          <div class="contact-form-container">
+            <h1 class="greet-heading">Get In Touch</h1>
+            <form class="contact-form">
+              <input
+                class="form-controls"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                class="form-controls"
+                type="text"
+                placeholder="Your Email"
+              />
+              <input
+                class="form-controls"
+                type="text"
+                placeholder="Your Phone"
+              />
+              <textarea
+                class="form-controls"
+                placeholder="Write your message"
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+              >
+              </textarea>
+              <input
+                class="form-btn btn common-btn"
+                type="submit"
+                value="Send Message"
+              />
+            </form>
+          </div>
+          <div class="contact-details">
+            <h1 class="greet-heading">My Contact Details</h1>
+            <div class="details">
+              <h5 class="contact-heading">EMAIL</h5>
+              <p class="contact-text">example@gmail.com</p>
+            </div>
+            <div class="details">
+              <h5 class="contact-heading">PHONE</h5>
+              <p class="contact-text">+91 0123456789</p>
+            </div>
+            <div class="details">
+              <h5 class="contact-heading">FAX</h5>
+              <p class="contact-text">+91 0123456789</p>
+            </div>
+            <div class="details">
+              <h5 class="contact-heading">ADDRESS</h5>
+              <p class="contact-text">San Francisco, CA</p>
+              <p>4th Floor8 Lower</p>
+              <p>San Francisco street, M1 50F</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer>
+      <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
   </body>
 </html>
