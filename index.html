@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
@@ -26,43 +30,33 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Project</a></li>
-          <li><a href="#">Skills</a></li>
           <li><a href="#">Contact</a></li>
         </ui>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
       </nav>
     </header>
     <main>
       <section class="home-side">
         <div class="home-side-content">
           <div class="bio">
-            <h1>Welcome to My Website</h1>
+            <h1>Hi, I'm Betty !</h1>
             <p>
               I am a software developer with a passion for creating beautiful
               and functional websites. I have been working in the industry for
-              the past 3 years and have honed my skills in
-              <u>Redux</u>, <u>C# Asp.net</u> and <u>MERN Stuck</u>.
+              the past 3 years.
             </p>
-            <a href="#" class="btn animate-btn">See More</a>
+            <a href="#" class="btn animate-btn">Contact Me</a>
+            <a href="#" class="btn2 animate-btn">Resume</a>
           </div>
-          <img
-            src="images/personal_image.jpg"
-            alt="home-side Image"
-            class="home-side-image"
-          />
         </div>
       </section>
       <section class="about-side">
+        <div class="about-avatar-image">
+          <img src="images/side_image.jpg" alt="Avatar" class="avatar" />
+        </div>
+
         <div class="about-side-content">
-          <div class="about-side-image">
-            <img src="images/side_image.jpg" alt="Profile Image" />
-          </div>
           <div class="about-side-text">
-            <h2>My Story</h2>
+            <h2>About Me</h2>
             <p>
               I'm a passionate web developer with a love for design and
               technology. I started my journey in the industry 3 years ago, and
@@ -77,14 +71,83 @@
               technologies in the industry, so I can offer my clients the best
               possible solutions.
             </p>
-            <a href="#" class="btn animate-btn">Read More</a>
+            <div class="skills-list">
+              <h3>Skills</h3>
+
+              <div class="scroll-container">
+                <!-- <a class="scroll-button prev"
+                  ><i class="fa fa-solid fa-arrow-right"></i
+                ></a> -->
+                <div class="scroll-content">
+                  <ul class="icon-list">
+                    <li>
+                      <img
+                        src="svg/html-5-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>Html</a>
+                    </li>
+                    <li>
+                      <img
+                        src="svg/css-3-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>Css</a>
+                    </li>
+                    <li>
+                      <img
+                        src="svg/javascript-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>Java Script</a>
+                    </li>
+                    <li>
+                      <img
+                        src="svg/react-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>React Js/Ts</a>
+                    </li>
+                    <li>
+                      <img
+                        src="svg/redux-logo-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>Redux</a>
+                    </li>
+                    <li>
+                      <img
+                        src="svg/csharp-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>Asp.net Core</a>
+                    </li>
+                    <li>
+                      <img
+                        src="svg/mongodb-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>MongoDb</a>
+                    </li>
+                    <li>
+                      <img
+                        src="svg/node-js-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>Node Js</a>
+                    </li>
+                    <li>
+                      <img
+                        src="svg/database-sql-svgrepo-com.svg"
+                        alt="Icon description"
+                      /><a>Sql Server</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <a class="scroll-button next"
+                  ><i class="fa fa-solid fa-arrow-left"></i
+                ></a> -->
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="project-side" id="projects">
+      <!-- <section class="project-side" id="projects">
         <h2>My Projects</h2>
         <div class="project-list">
-          <!-- <div class="project-item">
+          <div class="project-item">
             <img src="images/Screenshot (1).png" alt="Project 1" />
             <h3>Project 1</h3>
             <p>Description of Project 1</p>
@@ -101,7 +164,7 @@
             <h3>Project 3</h3>
             <p>Description of Project 3</p>
             <button class="view-details">View Details</button>
-          </div> -->
+          </div>
         </div>
         <div id="project-modal" class="modal">
           <div class="modal-content">
@@ -111,11 +174,7 @@
             <p id="modal-description"></p>
           </div>
         </div>
-      </section>
-      <!-- <section class="other-side">
-        <h1>The Other Section</h1>
       </section> -->
-      <!-- <hr /> -->
       <section class="contact-side" id="contact">
         <div class="contact-heading">
           <h1 class="contact-title text-center">Contact Me</h1>
@@ -182,8 +241,13 @@
     <footer>
       <p>&copy; 2024 My Personal Website. All rights reserved.</p>
     </footer>
-
+    <div>
+      <a onclick="topFunction()" id="scrollBtn" title="Back to top">
+        <i class="fa fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
     <script src="js/script.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
