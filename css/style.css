@@ -201,7 +201,7 @@ nav {
 /* About Me Section Styles */
 .about-side {
   padding: 60px 0;
-  background: linear-gradient(55deg, #050002 0%, #400115 28%, #af043a 85%);
+  background: linear-gradient(20deg, #050002 0%, #400115 28%, #af043a 85%);
 }
 
 .about-side-content {
@@ -432,21 +432,36 @@ nav {
 /* Contact section styles */
 .contact-side {
   padding: 0 8rem;
-  background: linear-gradient(55deg, #400115 28%, #af043a 85%, #050002 0%);
+  /* background: linear-gradient(55deg, #ba063f 20%,#960231 40%, #43011b 80%); */
+  background: linear-gradient(200deg, #20000d 0%, #400115 28%, #af043a 85%);
+}
+
+.contect-me{
+  padding-top: 10px;
+  margin: 10px;
 }
 
 .contact-title {
   text-align: center;
-  margin-top: 5%;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
+
+.contact-des{
+  text-align: center;
+}
+
 .contact-content {
   display: flex;
-  margin: 3rem 0;
+  margin: 2rem 4rem;
+  padding-bottom: 30px;
+  padding-left: 20px;
   justify-content: space-between;
 }
 
 .contact-form-container {
   width: 50%;
+  justify-content: space-between;
 }
 
 .contact-form {
@@ -458,30 +473,58 @@ nav {
   width: 80%;
   padding: 10px 0;
   margin: 1.67rem 0;
+  background-color: transparent;
+  color: #fff;
 }
 
 .contact-form input[type="text"],
-select,
 textarea {
-  background-color: rgba(27, 27, 27, 0.071);
-  color: white;
+  background-color: transparent;
+  color: #fff;
   width: 80%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
+  /* resize: vertical; */
 }
 
 .contact-form .form-btn {
-  width: 83%;
+  width: 80%;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  /* transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; */
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form .form-btn:hover{
+  background-color: #fff;
+  color: #000;
+  border: none;
 }
 
 .contact-details {
   width: 50%;
 }
+
+.contact-details .details img{
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 9px;
+}
+
+
 
 @keyframes pulse {
   0% {
