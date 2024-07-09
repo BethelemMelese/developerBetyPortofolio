@@ -14,17 +14,18 @@ nav {
   min-height: 8vh;
   background-color: transparent;
   font-family: "Times New Roman", serif;
-  position: absolute; /* or fixed*/
+  position: fixed; /* or fixed*/
   width: 94%;
   z-index: 1;
   top: 0;
   transition: top 0.3s;
   border-radius: 10px;
-  border-left: 1px solid #eacfd7d1;
-  border-bottom: 2px solid #eacfd7d1;
-  border-top: 2px solid #eacfd7d1;
-  border-right: 2px solid #eacfd7d1;
+  border-left: 1px solid #fde0e9d1;
+  border-bottom: 1px solid #fde0e9d1;
+  border-top: 1px solid #fde0e9d1;
+  border-right: 1px solid #fde0e9d1;
   margin: 40px;
+  backdrop-filter: blur(10px);
 }
 
 .nav-logo a {
