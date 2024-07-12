@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bethelem Melese | Software Developer</title>
+    <title>Bethtech.Dev</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -24,34 +24,44 @@
     <header>
       <nav>
         <div class="nav-logo">
-          <a href="#">My Website</a>
+          <img
+            src="images/logo-removebg-preview.png"
+            alt="Avatar"
+            width="150"
+            height="50"
+            style="padding-top: 10px; padding-bottom: 5px"
+          />
         </div>
         <ui class="nav-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ui>
       </nav>
     </header>
     <main>
-      <section class="home-side">
+      <section class="home-side" id="home">
         <div class="home-side-content">
           <div class="bio">
-            <h1>Hi, I'm Betty !</h1>
+            <h1>Hi 👋, I'm Betty</h1>
             <p>
               I am a software developer with a passion for creating beautiful
               and functional websites. I have been working in the industry for
               the past 3 years.
             </p>
-            <a href="#" class="btn animate-btn">Contact Me</a>
+            <a href="#contact" class="btn animate-btn">Contact Me</a>
             <a href="#" class="btn2 animate-btn">Resume</a>
           </div>
         </div>
       </section>
-      <section class="about-side">
+      <section class="about-side" id="about">
         <div class="about-avatar-image">
-          <img src="images/Updated Betty Photo.jpg" alt="Avatar" class="avatar" />
+          <img
+            src="images/Updated Betty Photo.jpg"
+            alt="Avatar"
+            class="avatar"
+          />
         </div>
 
         <div class="about-side-content">
@@ -73,110 +83,133 @@
             </p>
             <div class="skills-list">
               <h3>Skills</h3>
-
               <div class="scroll-container">
-                <!-- <a class="scroll-button prev"
-                  ><i class="fa fa-solid fa-arrow-right"></i
-                ></a> -->
-                <div class="scroll-content">
-                  <ul class="icon-list">
-                    <li>
-                      <img
-                        src="svg/html-5-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>Html</a>
-                    </li>
-                    <li>
-                      <img
-                        src="svg/css-3-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>Css</a>
-                    </li>
-                    <li>
-                      <img
-                        src="svg/javascript-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>Java Script</a>
-                    </li>
-                    <li>
-                      <img
-                        src="svg/react-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>React Js/Ts</a>
-                    </li>
-                    <li>
-                      <img
-                        src="svg/redux-logo-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>Redux</a>
-                    </li>
-                    <li>
-                      <img
-                        src="svg/csharp-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>Asp.net Core</a>
-                    </li>
-                    <li>
-                      <img
-                        src="svg/mongodb-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>MongoDb</a>
-                    </li>
-                    <li>
-                      <img
-                        src="svg/node-js-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>Node Js</a>
-                    </li>
-                    <li>
-                      <img
-                        src="svg/database-sql-svgrepo-com.svg"
-                        alt="Icon description"
-                      /><a>Sql Server</a>
-                    </li>
-                  </ul>
+                <div class="icon-list fade">
+                  <img
+                    src="svg/html-5-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">HTML</div>
                 </div>
-                <!-- <a class="scroll-button next"
-                  ><i class="fa fa-solid fa-arrow-left"></i
-                ></a> -->
+                <div class="icon-list fade">
+                  <img
+                    src="svg/css-3-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">CSS</div>
+                </div>
+                <div class="icon-list fade">
+                  <img
+                    src="svg/javascript-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">JavaScript</div>
+                </div>
+                <div class="icon-list fade">
+                  <img
+                    src="svg/react-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">React</div>
+                </div>
+                <div class="icon-list fade">
+                  <img
+                    src="svg/redux-logo-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">Redux</div>
+                </div>
+                <div class="icon-list fade">
+                  <img
+                    src="svg/csharp-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">C#</div>
+                </div>
+                <div class="icon-list fade">
+                  <img
+                    src="svg/mongodb-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">Mongodb</div>
+                </div>
+                <div class="icon-list fade">
+                  <img
+                    src="svg/node-js-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">Node.Js</div>
+                </div>
+                <div class="icon-list fade">
+                  <img
+                    src="svg/database-sql-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="50%"
+                  />
+                  <div class="text">Sql Database</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- <section class="project-side" id="projects">
+      <section class="project-side" id="projects">
         <h2>My Projects</h2>
-        <div class="project-list">
-          <div class="project-item">
-            <img src="images/Screenshot (1).png" alt="Project 1" />
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
-            <button class="view-details">View Details</button>
+        <p class="motive">Some thing is here...</p>
+        <!-- List Container -->
+        <div id="item-list" class="project-list">
+          <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+              <img
+                id="project-item"
+                class="project-item"
+                src="images/Profile Logo.jpg"
+                width="20%"
+                height="20%"
+              />
+            </a>
+            <div class="desc">Add a description of the image here</div>
           </div>
-          <div class="project-item">
-            <img src="images/Screenshot (11).png" alt="Project 2" />
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
-            <button class="view-details">View Details</button>
+          <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+              <img
+                id="project-item"
+                class="project-item"
+                src="images/logo1.jpg"
+                width="20%"
+                height="20%"
+              />
+            </a>
+            <div class="desc">Add a description of the image here</div>
           </div>
-          <div class="project-item">
-            <img src="images/Screenshot (14).png" alt="Project 3" />
-            <h3>Project 3</h3>
-            <p>Description of Project 3</p>
-            <button class="view-details">View Details</button>
+          <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+              <img
+                id="project-item"
+                class="project-item"
+                src="images/logo1.jpg"
+                width="20%"
+                height="20%"
+              />
+            </a>
+            <div class="desc">Add a description of the image here</div>
           </div>
         </div>
-        <div id="project-modal" class="modal">
-          <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <img id="modal-image" src="" alt="" />
-            <h3 id="modal-title"></h3>
-            <p id="modal-description"></p>
-          </div>
-        </div>
-      </section> -->
-      <section class="contact-side">
-        <div class="contect-me">
+      </section>
+      <section class="contact-side" id="contact">
+        <div class="contact-me">
           <div class="contact-heading">
             <h1 class="contact-title text-center">Contact Me</h1>
             <p class="contact-des text-center">
@@ -207,11 +240,10 @@
                 <textarea
                   class="form-controls"
                   type="text"
-                  placeholder="Write your message"
-                  cols="10"
-                  rows="10"
-                >
-                </textarea>
+                  placeholder=" Write your message..."
+                  cols="5"
+                  rows="5"
+                ></textarea>
                 <input
                   class="form-btn common-btn"
                   type="submit"
@@ -250,11 +282,12 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+      <p>&copy; 2024 Bethtech.Dev. All rights reserved.</p>
     </footer>
     <div>
       <a onclick="topFunction()" id="scrollBtn" title="Back to top">
         <i class="fa fa-solid fa-arrow-up"></i>
+        <h1>Back to top</h1>
       </a>
     </div>
     <script src="js/script.js"></script>
