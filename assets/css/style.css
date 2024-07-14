@@ -1,16 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
 /* The branding color will be black and #AF0E28 */
-*{
- scroll-behavior: smooth;
- scroll-snap-type: x mandatory;
- box-sizing: border-box;
+
+html {
+  scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   height: 1000px; /* Used to enable scrolling */
   background-color: black;
   color: white;
-  margin: 0;
 }
 
 /* Navigation bar styles */
@@ -33,6 +38,14 @@ nav {
 
 main {
   margin-top: 80px;
+}
+
+.nav-logo {
+  color: #e9054e;
+  width: 100px;
+  padding: auto;
+  font-size: medium;
+  border-radius: 5px;
 }
 
 .nav-menu {
@@ -71,30 +84,13 @@ main {
   font-size: 15px;
 }
 
-/* scrollable icon */
-#scrollBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
+.bars {
+  /* width: 50px; */
+  /* background-color: #000; */
+  color: #000;
   border: none;
-  outline: none;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 12px;
-  font-size: 20px;
-}
-
-#scrollBtn:hover {
-  background-color: #e9054e;
-  color: white;
-}
-
-#scrollBtn{
-  color: #fff;
+  border-radius: 10px;
+  margin: 0px auto;
 }
 
 /* home-side section styles */
@@ -111,7 +107,7 @@ main {
       rgba(0, 0, 0, 0.564),
       rgba(0, 0, 0, 0.564)
     ),
-    url("/images/side_image.jpg");
+    url("/assets/images/side_image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -136,10 +132,12 @@ main {
 .bio p {
   font-size: 18px;
   line-height: 1.6;
+  padding-top: 20px;
 }
 
 .bio a {
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .btn {
@@ -261,42 +259,38 @@ main {
   text-align: center;
 }
 
-.skills-list h3 {
+/* for skill side style */
+
+.skill-lst {
   text-align: center;
-  margin-top: 30px;
 }
 
 .scroll-container {
-  max-width: 100px;
-  position: relative;
-  margin: auto;
-}
-
-.icon-list {
-  display: none;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 40%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
+  margin: 0px auto;
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -309,46 +303,83 @@ main {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  height: 70px;
+  border-radius: 10px;
 }
 
 /* for project side style */
-
-.project-side {
-  background: linear-gradient(55deg, #050002 10%, #400115 80%);
+.projects {
+  /* background-color: var(--bg-color); */
+  background: linear-gradient(50deg, #050002 0%, #400115 28%, #af043a 85%);
+  padding: 32px 0;
+  margin-top: 2rem;
 }
 
-.project-side h2 {
+.projects p{
   text-align: center;
-  padding-top: 50px;
+  padding: 20px 20px;
 }
 
-.project-side .motive {
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-title {
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: 0.5rem;
+}
+
+.project-details {
+  margin-bottom: 0.5rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px #8b8eaf;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* for stroller button style */
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 30px;
   padding-top: 10px;
 }
 
-.project-list{
+.animate-scroll{
+  animation: scroll 3s infinite;
+}
 
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
 }
 
 /* Contact section styles */
@@ -388,13 +419,14 @@ main {
 .contact-form {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 .contact-form .form-controls {
   width: 80%;
   padding: 10px 0;
   margin: 1.67rem 0;
-  background-color: #c9c6c6;
+  background-color: #f1f0f0;
   color: #000;
   border: none;
 }
@@ -408,6 +440,11 @@ textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
+}
+
+.contact-form input, textarea::placeholder {
+  padding: 0.5rem;
+  color: #000;
 }
 
 .contact-form .form-btn {
@@ -433,6 +470,10 @@ textarea {
   width: 50%;
 }
 
+.contact-details .details {
+  padding-top: 20px;
+}
+
 .contact-details .details img {
   width: 35px;
   height: 35px;
@@ -440,6 +481,18 @@ textarea {
   background-color: #fff;
   padding: 5px;
   border-radius: 9px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes pulse {

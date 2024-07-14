@@ -7,9 +7,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
@@ -18,19 +18,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
     <header>
       <nav>
         <div class="nav-logo">
-          <img
-            src="images/logo-removebg-preview.png"
-            alt="Avatar"
-            width="150"
-            height="50"
-            style="padding-top: 10px; padding-bottom: 5px"
-          />
+          <h1>Bethtech</h1>
         </div>
         <ui class="nav-menu">
           <li><a href="#home">Home</a></li>
@@ -38,6 +51,14 @@
           <li><a href="#projects">Project</a></li>
           <li><a href="#contact">Contact</a></li>
         </ui>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon
+            class="bars"
+            name="menu-outline"
+            size="large"
+            aria-hidden="true"
+          ></ion-icon>
+        </button>
       </nav>
     </header>
     <main>
@@ -46,19 +67,23 @@
           <div class="bio">
             <h1>Hi 👋, I'm Betty</h1>
             <p>
-              I am a software developer with a passion for creating beautiful
-              and functional websites. I have been working in the industry for
-              the past 3 years.
+              I'm a software developer who has a passion of developing useful
+              websites. I've spent the last three years working in this field.
             </p>
             <a href="#contact" class="btn animate-btn">Contact Me</a>
-            <a href="#" class="btn2 animate-btn">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1oyDmTD89MMUPZpqXEEYmG8O5ARWz3npW/view?usp=sharing"
+              target="_blank"
+              class="btn2 animate-btn"
+              >Resume</a
+            >
           </div>
         </div>
       </section>
       <section class="about-side" id="about">
         <div class="about-avatar-image">
           <img
-            src="images/Updated Betty Photo.jpg"
+            src="/assets/images/Updated Betty Photo.jpg"
             alt="Avatar"
             class="avatar"
           />
@@ -66,147 +91,170 @@
 
         <div class="about-side-content">
           <div class="about-side-text">
-            <h2>About Me</h2>
+            <h2>About Me 😊</h2>
             <p>
-              I'm a passionate web developer with a love for design and
-              technology. I started my journey in the industry 3 years ago, and
-              since then, I've had the opportunity to work on a variety of
-              projects, from small personal websites to large-scale software
-              development.
+              I'm a dedicated web developer who enjoys technology and design.
+              Since I began working in the field three years ago, I've had the
+              chance to work on a variety of projects, from complex software
+              development to small personal websites.
             </p>
             <p>
-              My goal is to create systems that not only look great but also
-              provide a seamless and enjoyable user experience. I'm constantly
-              learning and staying up-to-date with the latest trends and
-              technologies in the industry, so I can offer my clients the best
-              possible solutions.
+              My aim is to design systems that offer a smooth and delightful
+              user experience in addition to being visually attractive. I'm
+              constantly learning and staying up-to-date with the latest trends
+              and technologies in the industry, so I can offer my clients the
+              best possible solutions.
             </p>
-            <div class="skills-list">
-              <h3>Skills</h3>
+            <div class="skill-lst">
+              <h3>My Top Skills</h3>
               <div class="scroll-container">
-                <div class="icon-list fade">
+                <!-- Previous button -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <div class="icon-list">
                   <img
-                    src="svg/html-5-svgrepo-com.svg"
+                    src="/assets/svg/html-5-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
                   />
                   <div class="text">HTML</div>
                 </div>
-                <div class="icon-list fade">
+                <div class="icon-list">
                   <img
-                    src="svg/css-3-svgrepo-com.svg"
+                    src="/assets/svg/css-3-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
                   />
                   <div class="text">CSS</div>
                 </div>
-                <div class="icon-list fade">
+                <div class="icon-list">
                   <img
-                    src="svg/javascript-svgrepo-com.svg"
+                    src="/assets/svg/javascript-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
                   />
                   <div class="text">JavaScript</div>
                 </div>
-                <div class="icon-list fade">
+                <div class="icon-list">
                   <img
-                    src="svg/react-svgrepo-com.svg"
+                    src="/assets/svg/react-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
+                    style="background-color: #fff; border-radius: 5px"
                   />
                   <div class="text">React</div>
                 </div>
-                <div class="icon-list fade">
+                <div class="icon-list">
                   <img
-                    src="svg/redux-logo-svgrepo-com.svg"
+                    src="/assets/svg/redux-logo-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
+                    style="background-color: #fff; border-radius: 5px"
                   />
                   <div class="text">Redux</div>
                 </div>
-                <div class="icon-list fade">
+                <div class="icon-list">
                   <img
-                    src="svg/csharp-svgrepo-com.svg"
+                    src="/assets/svg/csharp-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
+                    style="background-color: #fff; border-radius: 5px"
                   />
                   <div class="text">C#</div>
                 </div>
-                <div class="icon-list fade">
+                <div class="icon-list">
                   <img
-                    src="svg/mongodb-svgrepo-com.svg"
+                    src="/assets/svg/mongodb-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
                   />
                   <div class="text">Mongodb</div>
                 </div>
-                <div class="icon-list fade">
+                <div class="icon-list">
                   <img
-                    src="svg/node-js-svgrepo-com.svg"
+                    src="/assets/svg/node-js-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
+                    style="background-color: #fff; border-radius: 5px"
                   />
                   <div class="text">Node.Js</div>
                 </div>
-                <div class="icon-list fade">
+                <div class="icon-list">
                   <img
-                    src="svg/database-sql-svgrepo-com.svg"
+                    src="/assets/svg/database-sql-svgrepo-com.svg"
                     alt="Icon description"
-                    width="50%"
+                    width="20%"
+                    style="background-color: #fff; border-radius: 5px"
                   />
                   <div class="text">Sql Database</div>
                 </div>
 
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <div class="icon-list">
+                  <img
+                    src="/assets/svg/git-svgrepo-com.svg"
+                    alt="Icon description"
+                    width="20%"
+                  />
+                  <div class="text">Git</div>
+                </div>
+
+                <!-- Next buttons -->
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- <section class="project-side" id="projects">
-        <h2>My Projects</h2>
-        <p class="motive">Some thing is here...</p>
-        <div id="item-list" class="project-list">
-          <div class="gallery">
-            <a target="_blank" href="img_5terre.jpg">
-              <img
-                id="project-item"
-                class="project-item"
-                src="images/Profile Logo.jpg"
-                width="20%"
-                height="20%"
-              />
-            </a>
-            <div class="desc">Add a description of the image here</div>
+      <section class="projects" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <p>here are Some of my Recent project</p>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="assets/images/logo1.jpg"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Expense Tracker</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
           </div>
-          <div class="gallery">
-            <a target="_blank" href="img_5terre.jpg">
-              <img
-                id="project-item"
-                class="project-item"
-                src="images/logo1.jpg"
-                width="20%"
-                height="20%"
-              />
-            </a>
-            <div class="desc">Add a description of the image here</div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/logo1.jpg"
+              alt="netflic-clone"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Netflix Clone</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
           </div>
-          <div class="gallery">
-            <a target="_blank" href="img_5terre.jpg">
-              <img
-                id="project-item"
-                class="project-item"
-                src="images/logo1.jpg"
-                width="20%"
-                height="20%"
-              />
-            </a>
-            <div class="desc">Add a description of the image here</div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/logo1.jpg"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Greeny Earth</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="contact-side" id="contact">
         <div class="contact-me">
           <div class="contact-heading">
@@ -220,26 +268,38 @@
           <div class="contact-content">
             <div class="contact-form-container">
               <h1 class="greet-heading">Get In Touch</h1>
-              <form class="contact-form">
+              <form
+                action="https://formspree.io/f/mvgpgaed"
+                method="POST"
+                class="contact-form"
+              >
                 <input
                   class="form-controls"
                   type="text"
-                  placeholder="Your Name"
+                  required
+                  placeholder="Enter Your Name"
+                  name="name"
                 />
                 <input
                   class="form-controls"
                   type="text"
-                  placeholder="Your Email"
+                  required
+                  placeholder="Enter Your Email"
+                  name="email"
                 />
                 <input
                   class="form-controls"
                   type="text"
-                  placeholder="Your Phone"
+                  required
+                  placeholder="Enter Your Phone"
+                  name="phone"
                 />
                 <textarea
                   class="form-controls"
                   type="text"
-                  placeholder=" Write your message..."
+                  required
+                  name="message"
+                  placeholder=" Enter Your Message..."
                   cols="5"
                   rows="5"
                 ></textarea>
@@ -266,31 +326,46 @@
                 </h5>
               </div>
               <div class="details">
-                <img
-                  src="svg/github-142-svgrepo-com.svg"
-                  alt="Icon description"
-                />
-                <img
-                  src="svg/linkedin-svgrepo-com.svg"
-                  alt="Icon description"
-                />
+                <a href="https://github.com/BethelemMelese" target="_blank">
+                  <img
+                    src="/assets/svg/github-142-svgrepo-com.svg"
+                    alt="github link"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/betty-melese"
+                  target="_blank"
+                >
+                  <img
+                    src="/assets/svg/linkedin-svgrepo-com.svg"
+                    alt="linkedin link"
+                /></a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <i class="scroll-up animate-scroll" id="scroll-up" 
+        ><img
+          src="assets/svg/icons8-upward-arrow-50.png"
+          class="socicon up-arrow"
+          alt="scroll-up"
+      /></i>
     </main>
+
     <footer>
       <p>&copy; 2024 Bethtech.Dev. All rights reserved.</p>
     </footer>
-    <div>
-      <a onclick="topFunction()" id="scrollBtn" title="Back to top">
-        <i class="fa fa-solid fa-arrow-up"></i>
-        <h1>Back to top</h1>
-      </a>
-    </div>
-    <script src="js/script.js"></script>
-    <script src="js/projects.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/projects.js"></script>
+    <script src="/assets/js/scroll.js"></script>
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
